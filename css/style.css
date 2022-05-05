@@ -1,0 +1,9 @@
+body{
+    margin: 5px;
+    width:200px;
+    height: 100px;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}

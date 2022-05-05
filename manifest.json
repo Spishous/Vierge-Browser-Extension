@@ -1,0 +1,24 @@
+{
+ "manifest_version": 3,
+ "name": "Custom Extension", // Le nom de votre extension
+ "description": "Description", // La description
+ "version": "1.0", // La version en en l'occurrence la première donc 1.0
+ "host_permissions": [
+  "<all_urls>"
+ ],
+ "content_scripts": [{
+  "matches": ["<all_urls>"],
+  "all_frames": true,
+  "js":      ["scripts/content.js"]
+ }],
+ "permissions": [
+  "activeTab"
+ ],
+ "action": {   // Les paramètres
+  "default_icon" : "img/icon.png", // L'icône qui s'affiche en haut à droite de votre navigateur
+  "default_popup": "popup.html" // Le popup qui s'affichera quand vous cliquez sur l'îcone
+ },
+ "icons": { // L'îcone qui s'affichera lorse que vous êtes sur la page extensions des paramètre
+  "128" : "img/icon_128.png" // 128 = 128x128 la taille de votre image
+ }
+}
